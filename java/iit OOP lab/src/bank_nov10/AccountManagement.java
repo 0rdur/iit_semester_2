@@ -14,5 +14,10 @@ public class AccountManagement{
         account1.deposit(50.0);
 // Display updated status
         account1.displayDetails();
+
+        account1.takeOutmoney();
+
+        account1.displayDetails();
+
     }
 }
