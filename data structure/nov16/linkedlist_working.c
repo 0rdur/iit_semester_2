@@ -15,11 +15,12 @@ void takeInput(student **adam);
 void search(student *adam,int roll);
 void writeinfile(student *adam);
 void menu(student **adam);
-
+void freelist(student *adam);
 
 int main(){
 student *adam = NULL;
 menu(&adam);
+freelist(adam);
 }
 
 void takeInput(student **adam){
@@ -90,12 +91,23 @@ void deleteAnode(student **adam, int roll){
  while(*current != NULL && (*current)->roll != roll){
       current = &(*current)->link;
       break;
-  }
+}
 
 
 student *delete = *current;
 *current = delete->link;
+  
+free(delete);
 
+}
+
+
+void freelist(student *adam) {
+    while (adam != NULL) {
+        student *next = adam->link;
+        free(adam);
+        adam = next;
+    }
 }
 
 void menu(student **adam){
