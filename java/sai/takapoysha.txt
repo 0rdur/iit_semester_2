@@ -1,0 +1,24 @@
+845
+
+(deposit)nov21,2026,8:53pm
+deposit: 1000
+source: abbar deya weekly taka
+current: 1020
+
+(takeOut)nov21,2026,9:15pm
+extracted: 100
+reason: cork(golden wing)
+current: 920
+
+(takeOut)nov21,2026,9:15pm
+extracted: 20
+reason: tape
+current: 920
+
+(takeOut)nov21,2026,9:15pm
+extracted: 55
+reason: hexisol
+current: 845
+
+
+
